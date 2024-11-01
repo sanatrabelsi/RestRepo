@@ -1,0 +1,16 @@
+<form (ngSubmit)="updateProvider(myForm)" #myForm="ngForm">
+    <div>
+      <label for="providerName">Nom:</label>
+      <input id="providerName" [(ngModel)]="provider.name" name="providerName" required>
+    </div>
+    <div>
+      <label for="providerEmail">Email:</label>
+      <input id="providerEmail" [(ngModel)]="provider.email" name="providerEmail" required>
+    </div>
+    <div>
+      <label for="providerAddress">Adresse:</label>
+      <input id="providerAddress" [(ngModel)]="provider.address" name="providerAddress" required>
+    </div>
+    <button type="submit">Mettre à jour</button>
+  </form>
+  
